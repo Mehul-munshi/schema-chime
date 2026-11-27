@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+/* Global theme tokens */
+:root {
+  --accent: #2563eb;
+  --accent-bg: #eff6ff;
+  --accent-border: #bfdbfe;
+  --border: #e2e8f0;
+  --text-h: #1e293b;
+  --social-bg: #f1f5f9;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom animations */
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.animate-live-pulse {
+  animation: live-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
